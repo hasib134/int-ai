@@ -1,7 +1,7 @@
 'use server';
 import { db } from "@/firebase/admin";
 // import { cookies } from "next/headers";
-
+import { collection } from "firebase/firestore";
 
 export async function sugnUp(params:SignUpParams) {
     const {uid,name,email} = params;
